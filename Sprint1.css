@@ -364,7 +364,8 @@ body {
 }
 
 .background1 {
-  background-color: #0000EC;
+  background: -webkit-gradient(linear, left bottom, left top, from(blue), to(#0000a3));
+  background: linear-gradient(0deg, blue 0%, #0000a3 100%);
   position: absolute;
   z-index: -1;
   min-height: 145.596vh;
@@ -698,7 +699,8 @@ body {
 }
 
 .background2 {
-  background-color: #0000EC;
+  background: -webkit-gradient(linear, left bottom, left top, from(blue), to(#0000a3));
+  background: linear-gradient(0deg, blue 0%, #0000a3 100%);
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   position: absolute;
