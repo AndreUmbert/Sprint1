@@ -1,0 +1,843 @@
+/*Header Mobile*/
+.header {
+  background-color: white;
+  display: block;
+  width: 100%;
+  z-index: 3;
+  position: relative;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background: #0000EC;
+}
+
+.header ul li a {
+  color: white;
+  display: block;
+  padding: 0px 0 24px 16px;
+  text-decoration: none;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.header ul li .episodiosnav {
+  padding-top: 16px;
+}
+
+/*Header Desktop*/
+@media only screen and (min-width: 1440px) {
+  .header {
+    height: 9.662vh;
+  }
+  .header .logo {
+    width: 36px;
+    height: 36px;
+    padding: 22px 0px 22px 100px;
+  }
+  .header .logo img {
+    width: 36px;
+    height: 36px;
+  }
+  .header ul {
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 39vw;
+    height: 9.662vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header ul li a {
+    color: #060A24;
+    padding: 0;
+  }
+  .header ul li .episodiosnav {
+    padding: 0;
+  }
+}
+
+.header ul li a:hover {
+  color: #00F3BB;
+  text-decoration: line-through;
+}
+
+.header ul li a:active {
+  color: #060A24;
+  opacity: 0.56;
+}
+
+html {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  height: 100vh;
+}
+
+/* For desktop: */
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* Menu hamburguesa icon*/
+.header .menu {
+  clear: both;
+  max-height: 0;
+  -webkit-transition: max-height .2s ease-out;
+  transition: max-height .2s ease-out;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-icon {
+  padding: 21px 22px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  background: black;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  -webkit-transition: background .2s ease-out;
+  transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon::before {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon::after {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  top: -5px;
+}
+
+/*Funcionalidad del menu hamburguesa - Barra de desplazamiento*/
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+/* Menu en Desktop */
+@media (min-width: 1440px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* Inicio Mobile*/
+.Inicio {
+  margin: 3.50245vh 5vw 2.89855vh 5vw;
+}
+
+.Inicio .Titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+}
+
+.Inicio .Titulo p {
+  font-size: 8.675vw;
+  line-height: 13.2vw;
+  margin: 0;
+  font-weight: 600;
+  color: #060A24;
+}
+
+.Inicio .Titulo .World {
+  text-decoration: line-through;
+  text-indent: 1.5vw;
+}
+
+.Inicio .Texto {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 3.5vw;
+  line-height: 7vw;
+  font-weight: 600;
+  word-spacing: 1.8vw;
+  margin: 1.9025vh 0 0 0;
+  color: #060A24;
+}
+
+.Inicio .Texto2 {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  color: #060A24;
+}
+
+.Inicio .Rectangulo1 {
+  margin: 4.34779vh 0 2.89860vh 0;
+  text-align: center;
+  background-color: #00F3BB;
+  padding: 5vw;
+  cursor: pointer;
+  line-height: 2.6vh;
+}
+
+.Inicio .Rectangulo1 a {
+  text-decoration: none;
+  color: #060A24;
+  font-size: 3.9vw;
+}
+
+.Rectangulo1:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#00F0B8), to(#0000FE));
+  background: linear-gradient(to right, #00F0B8, #0000FE);
+}
+
+/* Inicio Desktop*/
+@media only screen and (min-width: 1440px) {
+  .Inicio {
+    position: relative;
+    margin: 14.4928vh 0 0.60386vh 0;
+  }
+  .Inicio .Titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 13.888%;
+  }
+  .Inicio .Titulo p {
+    font-size: 7.7714285vh;
+    line-height: 10.2vh;
+    font-weight: 500;
+  }
+  .Inicio .Titulo .pale {
+    text-indent: 1.5vw;
+  }
+  .Inicio .Titulo .dot {
+    color: #0000EC;
+  }
+  .Inicio .Texto {
+    display: none;
+    opacity: 0;
+    margin: 0;
+  }
+  .Inicio .Texto2 {
+    display: block;
+    position: relative;
+    opacity: 1;
+    margin-left: 13.888%;
+    margin-right: 42.5%;
+    font-size: 0.85714285vw;
+  }
+  .Inicio .Texto2 p {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    line-height: 1.714285vw;
+    font-weight: 700;
+    word-spacing: 0.9vw;
+  }
+  .Inicio .Rectangulo1 {
+    margin: 6.763285vh 70.416vw 0.603864vh 13.8889vw;
+    text-align: center;
+    background-color: #00F3BB;
+    padding: 1.93236vh 4.097222vw 1.93236vh 4.097222vw;
+    cursor: pointer;
+    line-height: 2.82352vh;
+  }
+  .Inicio .Rectangulo1 a {
+    font-family: 'IBM Plex Mono', monospace;
+    text-decoration: none;
+    color: #060A24;
+    font-size: 0.95vw;
+    font-weight: 500;
+  }
+}
+
+.background1 {
+  background-color: #0000EC;
+  position: absolute;
+  z-index: -1;
+  min-height: 145.596vh;
+  height: 395vw;
+  max-height: 160vh;
+  width: 100%;
+  -webkit-clip-path: polygon(0 3.5%, 100% 0%, 100% 96%, 0% 100%);
+          clip-path: polygon(0 3.5%, 100% 0%, 100% 96%, 0% 100%);
+  max-width: 100vw;
+}
+
+.Podcasts {
+  position: relative;
+  margin: 0 0 0 0;
+}
+
+.Podcasts p {
+  margin: 10.62801vh auto 2.536231vh 5vw;
+  font-size: 8.6vw;
+  line-height: 13.4vw;
+  color: white;
+}
+
+.Podcasts .Episodios {
+  position: relative;
+  margin: 2.536231vh 3.4375vw 5.7971014vh 3.4375vw;
+}
+
+.Podcasts .Episodios iframe {
+  margin-bottom: 1.328502vh;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1440px) {
+  .background1 {
+    height: 72.44805vw;
+    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+            clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+    min-height: 120vh;
+    max-height: 120vh;
+  }
+  .Podcasts p {
+    position: relative;
+    margin: 22.46376vh 0 3.140096vh 13.8889vw;
+    font-size: 3.3488372vw;
+    line-height: 4.3255813vw;
+  }
+  .Podcasts .Episodios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    margin: 0 6.9444166vw;
+  }
+  .Podcasts .Episodios iframe {
+    width: 40vw;
+  }
+  .Podcasts .Episodios .Iframe1 {
+    margin-bottom: 8.6956vh;
+  }
+  .Podcasts .Episodios .Iframe2 {
+    margin-left: 5vw;
+    margin-bottom: 8.6956vh;
+  }
+  .Podcasts .Episodios .Iframe3 {
+    margin-bottom: 7.7295vh;
+  }
+  .Podcasts .Episodios .Iframe4 {
+    margin-left: 5vw;
+    margin-bottom: 7.7295vh;
+  }
+}
+
+.Womens {
+  position: relative;
+}
+
+.Womens img {
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  margin-bottom: 3.26086vh;
+}
+
+.Womens .titulo {
+  color: #060A24;
+  margin: 0 5vw 0.966183vh 5vw;
+  font-size: 8.57142vw;
+  line-height: 13.3vw;
+  position: relative;
+  font-weight: 700;
+}
+
+.Womens .texto1 {
+  margin: 0 5vw;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 4vw;
+  line-height: 7.3333333vw;
+  font-weight: 500;
+}
+
+.Womens .texto1 p {
+  color: #060A24;
+  position: relative;
+}
+
+.Womens .texto2 {
+  margin: 0 5vw 6.5217391vh 5vw;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 4vw;
+  line-height: 8.8vw;
+  font-weight: 500;
+}
+
+.Womens .texto2 p {
+  color: #060A24;
+  position: relative;
+}
+
+@media only screen and (min-width: 1440px) {
+  .Womens {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .Womens img {
+    width: 31.778779vw;
+    margin: 0 4.33333vw 7.72946vh 13.8889vw;
+  }
+  .Womens .contenido {
+    margin-top: 22.82608vh;
+    margin-right: 17.77777vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Womens .titulo {
+    color: #060A24;
+    margin: 0 0 2.89855vh 0;
+    font-size: 3.3488372vw;
+    line-height: 4.3255813vw;
+    position: relative;
+    font-weight: 700;
+  }
+  .Womens .titulo br {
+    display: none;
+  }
+  .Womens .texto1 {
+    margin: 0;
+    font-size: 1.1428vw;
+    line-height: 1.714285vw;
+  }
+  .Womens .texto2 {
+    margin: 0;
+    font-size: 1.1428vw;
+    line-height: 1.714285vw;
+  }
+  .Womens .texto2 br {
+    display: none;
+  }
+}
+
+.Invitadas {
+  position: relative;
+  margin-bottom: 5.79710vh;
+}
+
+.Invitadas p {
+  color: #060A24;
+  margin: 0 5vw 1.690821vh 5vw;
+  font-size: 8.57142vw;
+  line-height: 13.3vw;
+  position: relative;
+  font-weight: 700;
+}
+
+.Invitadas .Imagenes {
+  background-color: gray;
+}
+
+.Invitadas .Imagenes img {
+  width: 100vw;
+  position: relative;
+  display: block;
+}
+
+@media only screen and (min-width: 1440px) {
+  .Invitadas p {
+    margin: 0 52.708333vw 4.34782vh 13.8889vw;
+    color: #060A24;
+    font-size: 3.3488372vw;
+    line-height: 4.3255813vw;
+    position: relative;
+    font-weight: 700;
+  }
+  .Invitadas p br {
+    display: none;
+  }
+  .Invitadas .Imagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    margin: 0 0 7.72946vh 0;
+  }
+  .Invitadas .Imagenes img {
+    width: 33.333%;
+  }
+}
+
+.Temas {
+  position: relative;
+  margin-bottom: 5.07246vh;
+}
+
+.Temas p {
+  color: #060A24;
+  margin: 0 5vw 4.46859vh 5vw;
+  font-size: 8.57142vw;
+  line-height: 13.3vw;
+  position: relative;
+  font-weight: 700;
+}
+
+.Temas .temardos {
+  text-align: center;
+  margin: 0;
+}
+
+.Temas .temardos a img {
+  margin-bottom: 1.57vh;
+  width: 32.5vw;
+  max-width: 104px;
+}
+
+.Temas .temardos .Trabajorem {
+  margin: 0 5vw 5.91787vh 5vw;
+  font-size: 7.666vw;
+  color: #060A24;
+  font-weight: 700;
+  line-height: 10.22133336vw;
+}
+
+.Temas .temardos .Repenpro {
+  margin: 0 5vw 7.85024vh 5vw;
+  font-size: 7.666vw;
+  color: #060A24;
+  font-weight: 700;
+  line-height: 10.2213333vw;
+}
+
+.Temas .temardos .Bases {
+  margin: 0 5vw 7.85024vh 5vw;
+  font-size: 7.666vw;
+  color: #060A24;
+  font-weight: 700;
+  line-height: 10.2213333vw;
+}
+
+.Temas .temardos .Seguridad {
+  margin: 0 5vw 5.07246vh 5vw;
+  font-size: 7.666vw;
+  color: #060A24;
+  font-weight: 700;
+  line-height: 10.2213333vw;
+}
+
+.Temas .temardos .Seguridad br {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .Temas {
+    margin-bottom: 4.1063vh;
+  }
+  .Temas p {
+    margin: 0 52.708333vw 8.3333vh 13.8889vw;
+    color: #060A24;
+    font-size: 3.3488372vw;
+    line-height: 4.3255813vw;
+    position: relative;
+    font-weight: 700;
+  }
+  .Temas p br {
+    display: none;
+  }
+  .Temas .temardos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Temas .temardos a img {
+    margin-bottom: 3.50241vh;
+    margin-left: 4vw;
+  }
+  .Temas .temardos .Trabajorem {
+    margin: 0 0 0 4vw;
+    font-size: 1.71428vw;
+    line-height: 2.28570vw;
+  }
+  .Temas .temardos .Repenpro {
+    margin: 0 0 0 4vw;
+    font-size: 1.71428vw;
+    line-height: 2.28570vw;
+  }
+  .Temas .temardos .Bases {
+    margin: 0 0 0 4vw;
+    font-size: 1.71428vw;
+    line-height: 2.28570vw;
+  }
+  .Temas .temardos .Seguridad {
+    margin: 0 0 0 4vw;
+    font-size: 1.71428vw;
+    line-height: 2.28570vw;
+  }
+}
+
+.background2 {
+  background-color: #0000EC;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  z-index: -1;
+  height: 106.96361vw;
+  width: 100%;
+  max-height: 70vh;
+  min-height: 106.96361vw;
+  max-width: 100vw;
+}
+
+.Novedades {
+  position: relative;
+}
+
+.Novedades p {
+  text-align: center;
+  margin: 12.80193vh 5vw 4.34782vh 5vw;
+  font-size: 8.6vw;
+  line-height: 13.4vw;
+  color: white;
+  position: relative;
+}
+
+.Novedades .Rectangulo2 {
+  margin: 4.34779vh 5vw 2.89860vh 5vw;
+  text-align: center;
+  background-color: #00F3BB;
+  padding: 5vw;
+  cursor: pointer;
+  line-height: 2.6vh;
+}
+
+.Novedades .Rectangulo2 a {
+  text-decoration: none;
+  color: #060A24;
+  font-size: 3.9vw;
+}
+
+.Rectangulo2:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#00F0B8), to(#0000FE));
+  background: linear-gradient(to right, #00F0B8, #0000FE);
+}
+
+@media only screen and (min-width: 1440px) {
+  .background2 {
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    height: 35.9947189vw;
+    min-height: 35.9947189vw;
+    position: absolute;
+  }
+  .Novedades {
+    margin: 29.83091vh 0 18.23671vh 0;
+  }
+  .Novedades p {
+    position: relative;
+    margin: 0 0 4.34782vh 0;
+    font-size: 3.3488372vw;
+    line-height: 4.3255813vw;
+  }
+  .Novedades p br {
+    display: none;
+  }
+  .Novedades .Rectangulo2 {
+    margin: 0 38.05555vw 0 37.98611vw;
+    text-align: center;
+    background-color: #00F3BB;
+    padding: 1.93236vh 4.097222vw 1.93236vh 4.097222vw;
+    cursor: pointer;
+    line-height: 2.82352vh;
+    position: relative;
+  }
+  .Novedades .Rectangulo2 a {
+    font-family: 'IBM Plex Mono', monospace;
+    text-decoration: none;
+    color: #060A24;
+    font-size: 0.95vw;
+    font-weight: 500;
+  }
+}
+
+Footer {
+  background-color: white;
+  position: relative;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 30vw;
+}
+
+Footer p {
+  position: relative;
+  margin: 28.4375vw 0 1.93236vh 0;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 4.66666vw;
+  line-height: 4.6666vw;
+  font-weight: 500;
+}
+
+Footer .iconos {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100vw;
+}
+
+Footer .iconos i {
+  line-height: 9vw;
+  margin-bottom: 3.7439613vh;
+}
+
+@media only screen and (min-width: 1440px) {
+  Footer {
+    width: 100%;
+    height: 6.601348vw;
+  }
+  Footer p {
+    margin-top: 4.34782vh;
+    margin-left: 6.94445vw;
+    margin-bottom: 3.743961vh;
+    float: left;
+    font-size: 1.1vw;
+    line-height: 2.7vh;
+    font-weight: 500;
+  }
+  Footer .iconos {
+    margin-top: 4.34782vh;
+    margin-right: 6.94445vw;
+    width: 30vw;
+    top: 0;
+    float: right;
+  }
+  Footer .iconos i {
+    line-height: 1.86666vw;
+  }
+}
+/*# sourceMappingURL=Sprint1.css.map */
