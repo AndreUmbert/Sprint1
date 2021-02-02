@@ -382,11 +382,12 @@ body {
   margin: 0 0 0 0;
 }
 
-.Podcasts p {
+.Podcasts h2 {
   margin: 10.62801vh auto 2.536231vh 5vw;
   font-size: 8.6vw;
   line-height: 13.4vw;
   color: white;
+  font-weight: 500;
 }
 
 .Podcasts .Episodios {
@@ -397,6 +398,8 @@ body {
 .Podcasts .Episodios iframe {
   margin-bottom: 1.328502vh;
   width: 100%;
+  height: 232px;
+  border: 0;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -407,7 +410,7 @@ body {
     min-height: 120vh;
     max-height: 120vh;
   }
-  .Podcasts p {
+  .Podcasts h2 {
     position: relative;
     margin: 22.46376vh 0 3.140096vh 13.8889vw;
     font-size: 3.3488372vw;
@@ -544,7 +547,7 @@ body {
   margin-bottom: 5.79710vh;
 }
 
-.Invitadas p {
+.Invitadas h4 {
   color: #060A24;
   margin: 0 5vw 1.690821vh 5vw;
   font-size: 8.57142vw;
@@ -564,7 +567,7 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
-  .Invitadas p {
+  .Invitadas h4 {
     margin: 0 52.708333vw 4.34782vh 13.8889vw;
     color: #060A24;
     font-size: 3.3488372vw;
@@ -572,7 +575,7 @@ body {
     position: relative;
     font-weight: 700;
   }
-  .Invitadas p br {
+  .Invitadas h4 br {
     display: none;
   }
   .Invitadas .Imagenes {
@@ -593,7 +596,7 @@ body {
   margin-bottom: 5.07246vh;
 }
 
-.Temas p {
+.Temas h5 {
   color: #060A24;
   margin: 0 5vw 4.46859vh 5vw;
   font-size: 8.57142vw;
@@ -653,7 +656,7 @@ body {
   .Temas {
     margin-bottom: 4.1063vh;
   }
-  .Temas p {
+  .Temas h5 {
     margin: 0 52.708333vw 8.3333vh 13.8889vw;
     color: #060A24;
     font-size: 3.3488372vw;
@@ -661,7 +664,7 @@ body {
     position: relative;
     font-weight: 700;
   }
-  .Temas p br {
+  .Temas h5 br {
     display: none;
   }
   .Temas .temardos {
@@ -716,13 +719,14 @@ body {
   position: relative;
 }
 
-.Novedades p {
+.Novedades h6 {
   text-align: center;
   margin: 12.80193vh 5vw 4.34782vh 5vw;
   font-size: 8.6vw;
   line-height: 13.4vw;
   color: white;
   position: relative;
+  font-weight: 500;
 }
 
 .Novedades .Rectangulo2 {
@@ -756,13 +760,13 @@ body {
   .Novedades {
     margin: 29.83091vh 0 18.23671vh 0;
   }
-  .Novedades p {
+  .Novedades h6 {
     position: relative;
     margin: 0 0 4.34782vh 0;
     font-size: 3.3488372vw;
     line-height: 4.3255813vw;
   }
-  .Novedades p br {
+  .Novedades h6 br {
     display: none;
   }
   .Novedades .Rectangulo2 {
@@ -812,7 +816,11 @@ Footer .iconos {
   width: 100vw;
 }
 
-Footer .iconos i {
+Footer .iconos a {
+  color: black;
+}
+
+Footer .iconos a i {
   line-height: 9vw;
   margin-bottom: 3.7439613vh;
 }
@@ -838,7 +846,7 @@ Footer .iconos i {
     top: 0;
     float: right;
   }
-  Footer .iconos i {
+  Footer .iconos a i {
     line-height: 1.86666vw;
   }
 }
